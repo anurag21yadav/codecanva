@@ -1,0 +1,83 @@
+
+.body-section {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Satoshi;
+
+}
+.left-colom {
+    /* New part add here */
+    flex: 40%;
+    /*  */
+    height: 100vh;
+    background: #F4F1EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #606060 ;
+}
+
+.left-colom div {
+
+    padding: 10px 0;
+    margin-left: 20px;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 0px;
+    color: #606060;
+}
+
+.right-colom{
+     flex: 60%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #444444;
+
+}
+.right-colom .heading-section{
+    margin-right:650px !important;
+  
+    }
+.form-label {
+
+    margin-bottom: 20px;
+   margin-top: 20px;
+    padding: 10px;
+    flex: 90%;
+    background: #F4F1EB;
+    border: none;
+    
+}
+.submit-button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    /* New part add here */
+  width:100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.heading-section {
+    padding-left: 0px;
+}

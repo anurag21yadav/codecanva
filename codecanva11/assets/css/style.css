@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'satoshi-800';
+    src: url(../fonts/satoshi/Satoshi-Black.ttf);
+}
+@font-face {
+    font-family: 'satoshi-700';
+    src: url(../fonts/satoshi/Satoshi-Bold.ttf);
+}
+@font-face {
+    font-family: 'satoshi-500';
+    src: url(../fonts/satoshi/Satoshi-Medium.ttf);
+}
+@font-face {
+    font-family: 'satoshi-400';
+    src: url(../fonts/satoshi/Satoshi-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'satoshi-300';
+    src: url(../fonts/satoshi/Satoshi-Light.ttf);
+}
+
+body,
+html {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100vw;
+    margin: 0px;
+    background: #fff;
+}
+.fs-18{
+    font-size: 18px !important;
+}
+.fs-20{
+    font-size: 20px !important;
+}
+.fs-25{
+    font-size: 25px !important;
+}
+.fs-30{
+    font-size: 30px !important;
+}
+.fs-40{
+    font-size: 40px !important;
+}
+.fs-50{
+    font-size: 50px !important;
+}
+.fs-60{
+    font-size: 60px !important;
+}
+.fs-70{
+    font-size: 70px !important;
+}
+.fs-80{
+    font-size: 80px !important;
+}
+.ff-satoshi-800{
+    font-family: 'satoshi-800' !important;
+}
+.ff-satoshi-700{
+    font-family: 'satoshi-700' !important;
+}
+.ff-satoshi-500{
+    font-family: 'satoshi-500' !important;
+}
+.ff-satoshi-400{
+    font-family: 'satoshi-400' !important;
+}
+.ff-satoshi-300{
+    font-family: 'satoshi-300' !important;
+}
+.ff-zodiak-300{
+    font-family: 'Zodiak', serif !important;
+    font-weight: 300;
+}
+.color-fff{
+    color: #fff;
+}
+.color-757575{
+    color: #757575;
+}
+.color-2757FF{
+    color: #2757FF;
+}
+
+.header {
+    border-bottom: 2px solid #000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+}
+.mainScreen{
+    padding-top: 70px;
+}
+
+.header .logo {
+    font-family: 'satoshi-700';
+    font-size: 25px;
+    padding: 10px;
+}
+
+.bars {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-bar {
+    width: 50px;
+    height: 2px;
+    margin: 2px 0px;
+    background: #000;
+    display: block;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.item-1 {
+    top: 18px;
+    transform: rotate(0deg);
+}
+
+.item-2 {
+    top: 25px;
+}
+
+.bars.active .item-1 {
+    transform: rotate(45deg);
+    top: 25px;
+    width: 55px;
+}
+
+.bars.active .item-2 {
+    transform: rotate(-45deg);
+    top: 25px;
+    width: 55px;
+}
+
+.menu-list {
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    height:0px;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 999;
+    background: #fff;
+}
+
+.menu-list.active {
+    height: 280px;
+}
+
+.menu-li {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-li span {
+
+    font-size: 40px;
+    font-family: 'satoshi-300';
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.menu-li a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.marquee-star {
+    margin: 10px;
+}
+
+.marquee-content-item {
+    font-family: 'satoshi-500';
+    display: block;
+    padding: 10px;
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    width: fit-content;
+}
+.color-A5A5A5{
+    color: #A5A5A5;
+}
+.marquee-data {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 2000px;
+    animation: header1 2s linear infinite;
+    position: relative;
+}
+
+@keyframes header1 {
+    0% {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-330px);
+    }
+}
+.marquee-data-1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    width: 2000px;
+    animation: header2 2s linear infinite;
+    position: relative;
+}
+
+@keyframes header2 {
+    0% {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-250px);
+    }
+}
+.marquee-data-2{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    width: 2000px;
+    animation: header3 2s linear infinite;
+    position: relative;
+}
+.marquee-data-2 .marquee-content-item{
+    font-size: 40px;
+}
+@keyframes header3 {
+    0% {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-550px);
+    }
+}
+.header-heading{
+    font-family: 'satoshi-300';
+    font-size: 70px;
+}
+.custom-container{
+    padding: 50px 70px;
+}
+.para-content{
+    font-family: 'satoshi-300';
+    font-size: 22px;
+}
+.para-content-item{
+    font-family: 'satoshi-300';
+    font-size: 18px;
+}
+.bg-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.side-area-rotate{
+    font-size: 20px;
+    font-family: 'satoshi-400';
+    transform: rotate(90deg);
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    left: -150px;
+    width: 200px;
+    top: 50px;
+}
+.border-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: #000;
+}
+.border-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: #000;
+}
+.section-border{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.rotate-90{
+    transform: rotate(-90deg);
+}
+.process-color{
+    background: #F4F1EB;
+}
+.process-section{
+    border-bottom: 1px solid #000;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.process-bg{
+    background-image: url(../images/process.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.process-bg-1{
+    background-image: url(../images/about-4.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.process-data{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Zodiak', serif !important;
+    font-size: 40px;
+    color: #fff;
+    text-align: end;
+    padding: 10px;
+}
+.process-data span{
+    display: block;
+}
+.dash{
+    width: 20px;
+    height: 1px;
+    background: #000;
+    margin: 0px 10px;
+}
+footer{
+    background: #141413;
+}
+.footer-anim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.footer-anim-text-area{
+    position: relative;
+    top: -50px;
+    color: #fff;
+    transform: rotate(-20deg);
+}
+.footer-anim-text{
+    display: block;
+    padding: 10px;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-size: 18px;
+}
+.line-height-50{
+    line-height: 50px;
+}
+.social-user{
+    background: #FFF7E8;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

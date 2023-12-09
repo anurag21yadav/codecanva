@@ -1,0 +1,133 @@
+.item-1 {
+    top: 18px;
+    transform: rotate(0deg);
+}
+
+.item-2 {
+    top: 25px;
+}
+
+.bars.active .item-1 {
+    transform: rotate(45deg);
+    top: 25px;
+    width: 55px;
+}
+
+.bars.active .item-2 {
+    transform: rotate(-45deg);
+    top: 25px;
+    width: 55px;
+}
+
+.menu-list {
+
+    top: 70px;
+    left: 0px;
+    height:0px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #fff;
+
+}
+.menu-list.active {
+    height:100%;
+   
+}
+.menu-li {
+    height:172px;
+    display:block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+
+}
+.menu-li a{
+    text-decoration: none;
+    color: #000;
+
+}
+.menu-li:first-child:hover,
+.menu-li:nth-child(2):hover,
+.menu-li:nth-child(3):hover,
+.menu-li:nth-child(4):hover 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 2000px;
+   height:172px;
+    /* animation: text-slide 2s linear infinite; */
+    position: relative;
+    background-color: #000;
+    color: white;
+    z-index:-1;
+    
+}
+
+
+  .menu-li:hover span{
+  color: white;
+    position:relative;
+     z-index: -1;
+    
+}
+.marquee-star1  {
+     border: 0px solid #ddd;
+    border-radius: 1px;
+    padding: 5px;
+    width: 10px;
+    
+    filter: invert(1);
+}
+
+.marquee-content-item1{
+    /* position: absolute; */
+    top: 0 !important;
+    font-size: 20px !important;
+    width: fit-content !important;
+    color: white !important;
+   
+}
+.marquee-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px; 
+     width: fit-content;
+   
+}
+.color-A5A5A5{
+    color: #A5A5A5;
+}
+
+@keyframes header1 {
+    0% {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-330px);
+    }
+}
+.marquee-data {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 2000px;
+    animation: header1 2s linear infinite;
+    position: relative;
+}
+@keyframes smoothMove {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.marquee-data-1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    width: 2000px;
+    animation: header2 2s linear infinite;
+    position: relative;
+}
+/* Add css for contact page  */
